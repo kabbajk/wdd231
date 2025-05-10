@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 Responsive Web Design">
+    <meta name="author" content="James kabba conteh">
+    <title>WDD 231 Web Fronend Developement 1 - James Kabba Conteh</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/dp.jpg" alt="Profile Photo">
+        <h2>James Kabba conteh</h2>
+    </header>
+
+    <nav>
+        <button id="menuBtn">&#9776;</button> 
+        <ul id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+            <li><a href="https://github.com/lexgerald">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/gerald-williams-0825a81a0/">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+            <h1>Web Fronend Developement 1</h1>
+            <div class="content-container">
+                <section class="course-work">
+                    <h2>Course Work</h2>
+                    <ul>
+                        <li>HTML & CSS Fundamentals</li>
+                        <li>JavaScript Basics</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="content-container">
+                <section class="toloria">
+                    <h2>Freetown, Sierra Leone</h2>
+                    <figure>
+                        <img src="images/lumly-beach.jpeg" alt="Lumly Beach">
+                        <figcaption>Lumly Beach</figcaption>
+                    </figure>
+                </section>
+            </div>
+       
+    </main>
+  
+        <div class="content-container2">
+            <section class="course-work">
+                <h2>Web and Computer Programming Certificate</h2>
+                <button id="allCourses">All</button>
+                <button id="wddCourses">WDD</button>
+                <button id="cseCourses">CSE</button>
+                <div id="coursesContainer"></div>
+            </section>
+        </div>
+
+    <footer>
+        <div class="footer-top">
+            <p>&copy; <span id="currentyear"></span> 💻James kabba conteh💻 Sierra Leone</p>
+            <img src="images/slflag2.avif" alt="Footer Logo">
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
