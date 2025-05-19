@@ -1,0 +1,149 @@
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 100;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.site-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+.nav-menu {
+    transition: all 0.3s ease;
+}
+
+#primary-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+#primary-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+#primary-nav li a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger-box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.2s ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: transform 0.2s ease;
+}
+
+.hamburger-inner::before {
+    top: -8px;
+}
+
+.hamburger-inner::after {
+    top: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--dark-color);
+        padding: 5rem 1rem 1rem;
+        transition: right 0.3s ease;
+        z-index: 90;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    #primary-nav {
+        flex-direction: column;
+    }
+
+    .hamburger.active .hamburger-inner {
+        background-color: transparent;
+    }
+
+    .hamburger.active .hamburger-inner::before {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .hamburger-inner::after {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-menu {
+        display: block !important;
+    } }

@@ -1,0 +1,273 @@
+/* Base Styles */
+:root {
+    --primary-color: #055C9D;
+    --secondary-color: #003060;
+    --accent-color: #0E86D4;
+    --light-color: #f8f9fa;
+    --dark-color: #68BBE3;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav li a:hover {
+    background-color: var(--secondary-color);
+}
+
+.view-toggle {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Members Container */
+#members-container {
+    padding: 1rem;
+}
+
+/* Grid View */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* List View Styles (Mobile First Approach) */
+.list-view .member-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    background-color: white;
+}
+
+/* Hide images in list view */
+.list-view .member-card img {
+    display: none;
+}
+
+/* Compact information layout */
+.list-view .member-card h3 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.list-view .member-card p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+.list-view .member-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive adjustments for tablets */
+@media (min-width: 480px) {
+    .list-view .member-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop/larger tablet view */
+@media (min-width: 768px) {
+    .list-view .member-card {
+        grid-template-columns: 2fr 2fr 1.5fr 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .list-view .member-card h3,
+    .list-view .member-card p,
+    .list-view .member-card a {
+        margin: 0;
+    }
+}
+
+/* Hover effects for non-touch devices */
+@media (hover: hover) {
+    .list-view .member-card:hover {
+        background-color: #f8f9fa;
+        transform: translateX(2px);
+        transition: all 0.2s ease;
+    }
+}
+
+/* Optional: Add hover effect for better UX */
+.list-view .member-card:hover {
+    background-color: #e9ecef;
+    transform: translateX(4px);
+    transition: all 0.2s ease;
+}
+
+/* Weather Section Grid Layout */
+.weather {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+}
+
+h2 {
+    margin-left: 70px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.current-weather,
+.weather-forecast {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+
+.current-weather h2,
+.weather-forecast h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+#temperature {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.weather p {
+    margin: 0.5rem 0;
+    color: #34495e;
+    font-size: 1.1rem;
+}
+
+.weather-forecast p {
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed #bdc3c7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 650px) {
+    .current-weather {
+        grid-template-columns: 1fr;
+    }
+
+    .weather {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .contact,
+footer .legal {
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}

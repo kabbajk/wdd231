@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber of Commerce directory for Africa">
+  <meta name="author" content="James kabba conteh">
+  
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Africa Chamber of Commerce">
+  <meta property="og:description" content="The African Chamber of Commerce fosters trade, investment, and business growth across Africa. Join our network to access opportunities, resources, and partnerships for economic development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://github.com/kabbajk/wdd231/blob/main/images/kabbajk.jpg">
+  <meta property="og:url" content="https://kabbajk.github.io/wdd231/chamber/directory.html">
+  
+  <title>Africa Chamber of Commerce Directory</title>
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+  <div class="header-content">
+    <div class="logo">
+      <img src="images/Handshake-removebg-preview.png" alt="Freetown Chamber of Commerce Logo">
+    </div>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <nav class="nav-menu">
+      <ul id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <h2>Business Directory</h2>
+  <section class="weather">
+    <div class="current-weather">
+        <h2>Current Weather</h2>
+        <p><span id="temperature">78</span>°F</p>
+        <p>Partly Cloudy</p>
+        <p>High: 85° Low: 52°</p>
+        <p>Humidity: 34%</p>
+        <p>Sunrise: 7:30am</p>
+        <p>Sunset: 9:50pm</p>
+    </div>
+    <div class="weather-forecast">
+        <h2>Weather Forecast</h2>
+        <p>Today: 90°F</p>
+        <p>Wednesday: 89°F</p>
+        <p>Thursday: 68°F</p>
+    </div>
+   </section>
+  <main>
+    <h1>Lists of Companies</h1>
+    <div class="view-toggle">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </div>
+    <div id="members-container" class="grid-view"></div>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p>Africa Chamber of Commerce</p>
+      <p>5 Beach Road</p>
+      <p>Calabar, Nigeria</p>
+      <p>☎ (+234) 77342953</p>
+      <p>✉ info@africachamber.org</p>
+    </div>
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="images/fb-removebg-preview.png" alt="Facebook Icon" width="32">
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="images/twitter-removebg-preview.png" alt="Twitter Icon" width="32">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="images/instragram-removebg-preview.png" alt="Instagram Icon" width="32">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin-removebg-preview.png" alt="LinkedIn Icon" width="32">
+        </a>
+      </div>
+    <div class="legal">
+      <p>&copy; <span id="copyright-year"></span> Africa Chamber</p>
+      <p>James kabba conteh</p>
+      <p>WDD 231 Project</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Sierra Solutions",
+        "address": "123 Main St, Lagos",
+        "phone": "800-555-1234",
+        "url": "https://www.sierrasolutionsgroup.com/",
+        "email": "info@business1.com",
+        "image": "../images/solutions.svg",
+        "membershipLevel": 3,
+        "tagline": "Quality services since 1990"
+    },
+    {
+        "name": "Business Name 2",
+        "address": "456 Market St, Timbuktu",
+        "phone": "800-555-5678",
+        "url": "https://itj.com/",
+        "email": "info@itj.com",
+        "image": "../images/EverHive.png",
+        "membershipLevel": 2,
+        "tagline": "Your trusted partner"
+    },
+    {
+        "name": "Business Name 3",
+        "address": "789 Trade Ave, Timbuktu",
+        "phone": "800-555-9012",
+        "url": "https://www.wildfire-corp.com/",
+        "email": "infowildfire.com",
+        "image": "../images/logo.png",
+        "membershipLevel": 1,
+        "tagline": "Innovative solutions"
+    },
+    {
+        "name": "Business Name 4",
+        "address": "321 Commerce Blvd, Timbuktu",
+        "phone": "800-555-3456",
+        "url": "https://mybusiness4.com",
+        "email": "info@business4.com",
+        "image": "../images/flexcare.webp",
+        "membershipLevel": 3,
+        "tagline": "Excellence in service"
+    },
+    {
+        "name": "Business Name 5",
+        "address": "654 Industry Ln, Timbuktu",
+        "phone": "800-555-7890",
+        "url": "https://mybusiness5.com",
+        "email": "info@business5.com",
+        "image": "../images/horizontal.svg",
+        "membershipLevel": 2,
+        "tagline": "Building your future"
+    },
+    {
+        "name": "Business Name 7",
+        "address": "135 Prosperity Way, Timbuktu",
+        "phone": "800-555-6789",
+        "url": "https://mybusiness7.com",
+        "email": "info@business7.com",
+        "image": "../images/netflix.png",
+        "membershipLevel": 3,
+        "tagline": "Connecting communities"
+    }
+]
+
+   
