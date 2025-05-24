@@ -1,0 +1,6 @@
+@media (min-width: 768px) {
+
+    /* Spotlights Grid (desktop: 3 columns) */
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    } }

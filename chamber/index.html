@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber of Commerce directory for Africa">
+  <meta name="author" content="James kabba conteh">
+  
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Africa Chamber of Commerce">
+  <meta property="og:description" content="The African Chamber of Commerce fosters trade, investment, and business growth across Africa. Join our network to access opportunities, resources, and partnerships for economic development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://github.com/kabbajk/wdd231/blob/main/images/kabbajk.jpg">
+  <meta property="og:url" content="https://kabbajk.github.io/wdd231/chamber/directory.html">
+  
+  <title>Africa Chamber of Commerce Directory</title>
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/weather.js">  </script>
+  <script src="scripts/members.js"></script>
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+  <header>
+  <div class="header-content">
+    <div class="logo">
+      <img src="images/handshake-removebg-preview.png" alt="Freetown Chamber of Commerce Logo">
+    </div>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <nav class="nav-menu">
+      <ul id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <h1>Business Directory</h1>
+  <main>
+         <!-- Hero Section -->
+         <section class="hero">
+          <picture>
+              <source media="(max-width: 600px)" srcset="images/small.webp">
+              <source media="(min-width: 601px)" srcset="images/larger.webp">
+              <img src="images/larger.webp" alt="City skyline">
+          </picture>
+          <div class="hero-content">
+              <h2>Welcome to Our Community</h2>
+              <a href="join.html" class="cta-button">Join the Chamber</a>
+          </div>
+      </section>
+
+      <!-- Current Events -->
+      <section class="events">
+          <h2>Upcoming Events</h2>
+          <div class="event-card">
+              <h3>Business Networking Mixer</h3>
+              <p>June 15, 2025 | 5:30 PM - 7:30 PM</p>
+              <p>Freetown City Councle</p>
+          </div>
+          <div class="event-card">
+              <h3>Economic Development Forum</h3>
+              <p>June 22, 2025 | 8:00 AM - 12:00 PM</p>
+              <p>Downtown Business Hub</p>
+          </div>
+      </section>
+
+      <!-- Weather Section -->
+      <section class="weather">
+          <h2>Local Weather</h2>
+          <div class="current-weather">
+              <h3>Current Conditions</h3>
+              <div id="weather-icon"></div>
+              <p>Temperature: <span id="current-temp"></span>°F</p>
+              <p>Condition: <span id="weather-desc"></span></p>
+              <p>Humidity: <span id="humidity"></span>%</p>
+          </div>
+          <div class="forecast">
+              <h3>3-Day Forecast</h3>
+              <div id="forecast-container"></div>
+          </div>
+      </section>
+
+      <!-- Member Spotlights -->
+      <section class="spotlights">
+          <h2>Member Spotlights</h2>
+          <div id="spotlight-container"></div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p>Africa Chamber of Commerce</p>
+      <p>5 Beach Road</p>
+      <p>Calabar, Nigeria</p>
+      <p>☎ (+234) 77342953</p>
+      <p>✉ info@africachamber.org</p>
+    </div>
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="images/fb-removebg-preview.png" alt="Facebook Icon" width="32">
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="images/twitter-removebg-preview.png" alt="Twitter Icon" width="32">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="images/instragram-removebg-preview.png" alt="Instagram Icon" width="32">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin-removebg-preview.png" alt="LinkedIn Icon" width="32">
+        </a>
+      </div>
+    <div class="legal">
+      <p>&copy; <span id="copyright-year"></span> Africa Chamber</p>
+      <p>James kabba conteh</p>
+      <p>WDD 231 Project</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
