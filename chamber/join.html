@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber of Commerce directory for Africa">
+  <meta name="author" content="James kabba conteh">
+  
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Africa Chamber of Commerce">
+  <meta property="og:description" content="The African Chamber of Commerce fosters trade, investment, and business growth across Africa. Join our network to access opportunities, resources, and partnerships for economic development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://github.com/kabbajk/wdd231/blob/main/images/kabbajk.jpg">
+  <meta property="og:url" content="https://kabbajk.github.io/wdd231/chamber/directory.html">
+  
+  <title>Africa Chamber of Commerce Directory</title>
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/thankyou.css">
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/members.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/join.js"></script>
+</head>
+<body>
+  <header>
+  <div class="header-content">
+    <div class="logo">
+      <img src="images/handshake.png" alt="Freetown Chamber of Commerce Logo">
+    </div>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <nav class="nav-menu">
+      <ul id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <h1>Apply For membership-benefits</h1>
+  <main class="jion-main">
+    <h2>Membership Application</h2>
+        
+    <div class="join-container">
+        <form id="membershipForm" method="get" action="thankyou.html" class="membership-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="firstName">
+                        First Name*
+                        <input type="text" id="firstName" name="firstName" title="Enter your first name" 
+                               autocomplete="given-name" required>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">
+                        Last Name*
+                        <input type="text" id="lastName" name="lastName" title="Enter your last name" 
+                               autocomplete="family-name" required>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="orgTitle">
+                        Organizational Title
+                        <input type="text" id="orgTitle" name="orgTitle" title="Enter your organizational title" 
+                               autocomplete="organization-title" pattern="[a-zA-Z\- ]{7,}" 
+                               placeholder="e.g., Marketing Director">
+                        <span class="hint">Minimum 7 characters (letters, spaces, or hyphens only)</span>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">
+                        Email Address*
+                        <input type="email" id="email" name="email" title="Enter your email address" 
+                               autocomplete="email" placeholder="yourname@example.com" required>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">
+                        Mobile Phone Number*
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" 
+                               autocomplete="tel" required placeholder="123-456-7890">
+                    </label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Business Information</legend>
+                
+                <div class="form-group">
+                    <label for="orgName">
+                        Business/Organization Name*
+                        <input type="text" id="orgName" name="orgName" title="Enter your organization name" 
+                               autocomplete="organization" required>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="membershipLevel">
+                        Membership Level*
+                        <select id="membershipLevel" name="membershipLevel" title="Select membership level" required>
+                            <option value="">-- Please select --</option>
+                            <option value="np">NP Membership (Non-Profit - Free)</option>
+                            <option value="bronze">Bronze Membership ($250/year)</option>
+                            <option value="silver">Silver Membership ($500/year)</option>
+                            <option value="gold">Gold Membership ($1000/year)</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="orgDescription">
+                        Business/Organization Description
+                        <textarea id="orgDescription" name="orgDescription" 
+                                  title="Describe your organization" rows="4"></textarea>
+                    </label>
+                </div>
+            </fieldset>
+            
+            <input type="hidden" id="timestamp" name="timestamp">
+            
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+        
+        <aside class="membership-benefits">
+            <h3>Membership Levels</h3>
+            <div class="membership-cards">
+                <article class="card np-card">
+                    <h4>NP Membership</h4>
+                    <p class="price">Free for non-profits</p>
+                    <a href="#np-modal" class="modal-link">View Benefits →</a>
+                </article>
+                
+                <article class="card bronze-card">
+                    <h4>Bronze</h4>
+                    <p class="price">$250/year</p>
+                    <a href="#bronze-modal" class="modal-link">View Benefits →</a>
+                </article>
+                
+                <article class="card silver-card">
+                    <h4>Silver</h4>
+                    <p class="price">$500/year</p>
+                    <a href="#silver-modal" class="modal-link">View Benefits →</a>
+                </article>
+                
+                <article class="card gold-card">
+                    <h4>Gold</h4>
+                    <p class="price">$1000/year</p>
+                    <a href="#gold-modal" class="modal-link">View Benefits →</a>
+                </article>
+            </div>
+        </aside>
+    </div> 
+  </main>
+ 
+  <footer>
+    <div class="contact">
+      <p>Africa Chamber of Commerce</p>
+      <p>5 Beach Road</p>
+      <p>Calabar, Nigeria</p>
+      <p>☎ (+234) 77342953</p>
+      <p>✉ info@africachamber.org</p>
+    </div>
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="images/fb.png" alt="Facebook Icon" width="32">
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="images/twitter.png" alt="Twitter Icon" width="32">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="images/instragram.png" alt="Instagram Icon" width="32">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin.png" alt="LinkedIn Icon" width="32">
+        </a>
+      </div>
+    <div class="legal">
+      <p>&copy; <span id="copyright-year"></span> Africa Chamber</p>
+      <p>James kabba conteh</p>
+      <p>WDD 231 Project</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

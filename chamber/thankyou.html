@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles/thankyou.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You for Your Application!</h1>
+        
+        <div class="confirmation">
+            <h2>Your Application Details</h2>
+            <div id="applicationDetails"></div>
+            
+            <p>We've received your membership application and will review it shortly. A confirmation has been sent to your email address.</p>
+            
+            <a href="index.html" class="back-btn">Return to Home</a>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const detailsContainer = document.getElementById('applicationDetails');
+            
+            if (urlParams.has('firstName')) {
+                const detailsHTML = `
+                    <p><strong>Name:</strong> ${urlParams.get('firstName')} ${urlParams.get('lastName')}</p>
+                    <p><strong>Email:</strong> ${urlParams.get('email')}</p>
+                    <p><strong>Phone:</strong> ${urlParams.get('phone')}</p>
+                    <p><strong>Organization:</strong> ${urlParams.get('orgName')}</p>
+                    ${urlParams.get('orgTitle') ? `<p><strong>Title:</strong> ${urlParams.get('orgTitle')}</p>` : ''}
+                    <p><strong>Membership Level:</strong> ${getMembershipLevelName(urlParams.get('membershipLevel'))}</p>
+                    <p><strong>Application Submitted:</strong> ${new Date(urlParams.get('timestamp')).toLocaleString()}</p>
+                `;
+                
+                detailsContainer.innerHTML = detailsHTML;
+            } else {
+                detailsContainer.innerHTML = '<p>No application details found.</p>';
+            }
+            
+            function getMembershipLevelName(level) {
+                switch(level) {
+                    case 'np': return 'NP Membership (Non-Profit)';
+                    case 'bronze': return 'Bronze Membership';
+                    case 'silver': return 'Silver Membership';
+                    case 'gold': return 'Gold Membership';
+                    default: return level;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
