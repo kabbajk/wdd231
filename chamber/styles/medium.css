@@ -1,0 +1,44 @@
+@media (min-width: 641px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hamburgerBtn {
+        display: none;
+    }
+
+    #primaryNav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .discover {
+        grid-template-areas:
+            "header header"
+            "sidebar gallery"
+            "sidebar gallery";
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Hover effects for medium screens and up */
+    .card img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+    } }
