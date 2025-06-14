@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SparkleWash - Premium laundry and dry cleaning services with free pickup and delivery. Eco-friendly cleaning solutions for your clothes.">
+    <meta name="author" content="James kabba conteh">
+    <meta property="og:title" content="SparkleWash - Premium Laundry Services">
+    <meta property="og:description" content="Professional laundry and dry cleaning services with free pickup and delivery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <title>SparkleWash | Premium Laundry Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/large.css" media="(min-width: 768px)">
+    <link rel="icon" href="images/fav.svg" type="image/fav-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/spark.svg" alt="SparkleWash Logo" width="180" height="60">
+            </a>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="#contact" class="cta-button">Schedule Pickup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Professional Laundry & Dry Cleaning Services</h1>
+                <p>We take care of your clothes so you can focus on what matters most.</p>
+                <a href="#contact" class="cta-button">Schedule a Pickup</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <img src="images/eco.svg" alt="Eco Friendly Icon" loading="lazy">
+                <h3>Eco-Friendly</h3>
+                <p>We use biodegradable detergents and energy-efficient processes.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/bulb.svg" alt="Fast Turnaround Icon" loading="lazy">
+                <h3>Fast Turnaround</h3>
+                <p>Get your clothes back in as little as 24 hours with our express service.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/care.svg" alt="Free Pickup Icon" loading="lazy">
+                <h3>Free Pickup & Delivery</h3>
+                <p>We'll come to you at no extra charge with our premium service.</p>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <span>1</span>
+                    <h3>Schedule Pickup</h3>
+                    <p>Book online or through our app and we'll pick up your clothes at your convenience.</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <h3>We Clean</h3>
+                    <p>Our experts clean your clothes with the utmost care using premium products.</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <h3>Delivery</h3>
+                    <p>Fresh, clean clothes delivered back to you at the scheduled time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"SparkleWash has saved me so much time! Their service is reliable and my clothes always come back looking perfect."</p>
+                    <div class="author">- Sarah J.</div>
+                </div>
+                <div class="testimonial">
+                    <p>"I've tried many laundry services, but none compare to the quality and care SparkleWash provides."</p>
+                    <div class="author">- Michael T.</div>
+                </div>
+                <div class="testimonial">
+                    <p>"The free pickup and delivery is a game-changer for my busy schedule. Highly recommend!"</p>
+                    <div class="author">- Emily R.</div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev" aria-label="Previous testimonial">❮</button>
+                <button class="next" aria-label="Next testimonial">❯</button>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Schedule a Pickup</h2>
+            <form id="pickup-form" action="form-action.html" method="get">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Type</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="wash-fold">Wash & Fold</option>
+                        <option value="dry-clean">Dry Cleaning</option>
+                        <option value="press-only">Press Only</option>
+                        <option value="delicates">Delicates</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Pickup Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Instructions</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Schedule Pickup</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>5 Salman Drive Aberdeen<br>Laundryville, Freetown</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@sparklewash.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 7pm</p>
+                <p>Saturday: 9am - 5pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SparkleWash. James Kabba Conteh.</p>
+            <p><a href="https://youtu.be/your-video-link" target="_blank">View Project Video</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

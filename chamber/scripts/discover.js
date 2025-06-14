@@ -30,7 +30,7 @@ currentYear.textContent = new Date().getFullYear();
 // Load gallery items from JSON
 async function loadGallery() {
   try {
-    const response = await fetch('/..data/discover.json');
+    const response = await fetch('data/attractions.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }

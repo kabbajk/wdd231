@@ -1,0 +1,65 @@
+{
+  "cityInfo": {
+      "population": "125,000",
+      "founded": "1872",
+      "elevation": "1,200"
+  },
+  "attractions": [
+      {
+          "id": 1,
+          "name": "Historic Downtown Square",
+          "address": "100 Main Street, Your City, ST 12345",
+          "description": "The heart of our city featuring boutique shops, restaurants, and monthly community events.",
+          "image": "images/downtown.webp"
+      },
+      {
+          "id": 2,
+          "name": "Riverside Park",
+          "address": "500 River Road, Your City, ST 12345",
+          "description": "A beautiful 50-acre park with walking trails, picnic areas, and a scenic river view.",
+          "image": "images/riverside-park.webp"
+      },
+      {
+          "id": 3,
+          "name": "City Museum",
+          "address": "200 Heritage Lane, Your City, ST 12345",
+          "description": "Explore our city's rich history through interactive exhibits and artifacts.",
+          "image": "images/museum.webp"
+      },
+      {
+          "id": 4,
+          "name": "Mountain View Golf Club",
+          "address": "300 Fairway Drive, Your City, ST 12345",
+          "description": "An 18-hole championship golf course with stunning mountain vistas.",
+          "image": "images/golf-course.webp"
+      },
+      {
+          "id": 5,
+          "name": "Farmers Market",
+          "address": "150 Market Street, Your City, ST 12345",
+          "description": "Fresh local produce, artisan goods, and live music every Saturday morning.",
+          "image": "images/farmers-market.webp"
+      },
+      {
+          "id": 6,
+          "name": "Performing Arts Center",
+          "address": "400 Cultural Avenue, Your City, ST 12345",
+          "description": "Hosting Broadway shows, concerts, and local theater productions year-round.",
+          "image": "images/arts-center.webp"
+      },
+      {
+          "id": 7,
+          "name": "Science Discovery Center",
+          "address": "250 Innovation Way, Your City, ST 12345",
+          "description": "Interactive science exhibits perfect for families and school groups.",
+          "image": "images/science-center.webp"
+      },
+      {
+          "id": 8,
+          "name": "Lakeview Trail",
+          "address": "Trailhead at 600 Lakeside Drive, Your City, ST 12345",
+          "description": "A 5-mile paved trail around the lake with breathtaking views and wildlife.",
+          "image": "images/lake-trail.webp"
+      }
+  ]
+}

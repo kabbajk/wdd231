@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SparkleWash services - Premium laundry, dry cleaning, and garment care services. We handle all your clothing care needs.">
+    <meta name="author" content="James Kabba Conteh">
+    <title>SparkleWash | Our Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/large.css" media="(min-width: 768px)">
+    <link rel="icon" href="images/fav.svg" type="image/fav-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/spark.svg" alt="SparkleWash Logo" width="180" height="60">
+            </a>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="#contact" class="cta-button">Schedule Pickup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Our Services</h1>
+            <p>Premium care for all your clothing needs</p>
+        </section>
+
+        <section class="service-categories">
+            <div class="category-tabs">
+                <button class="tab-button active" data-category="all">All Services</button>
+                <button class="tab-button" data-category="laundry">Laundry</button>
+                <button class="tab-button" data-category="drycleaning">Dry Cleaning</button>
+                <button class="tab-button" data-category="specialty">Specialty</button>
+            </div>
+
+            <div id="services-container" class="services-grid">
+                <!-- Services will be loaded dynamically from JSON -->
+            </div>
+        </section>
+
+        <section class="pricing-calculator">
+            <h2>Pricing Calculator</h2>
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="calc-service">Service Type</label>
+                        <select id="calc-service" required>
+                            <option value="">Select a service</option>
+                            <option value="wash-fold">Wash & Fold</option>
+                            <option value="dry-clean">Dry Cleaning</option>
+                            <option value="press-only">Press Only</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="calc-weight">Approximate Weight (lbs)</label>
+                        <input type="number" id="calc-weight" min="1" max="50" value="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="calc-rush">Rush Service</label>
+                        <select id="calc-rush">
+                            <option value="1.0">Standard (3-5 days)</option>
+                            <option value="1.25">Express (2 days)</option>
+                            <option value="1.5">Same Day</option>
+                        </select>
+                    </div>
+                    <button id="calculate-btn" class="cta-button">Calculate Price</button>
+                </div>
+                <div class="calculator-result">
+                    <h3>Estimated Cost</h3>
+                    <div id="estimate-result" class="estimate-amount">$0.00</div>
+                    <p class="estimate-note">Prices are estimates only. Final price may vary based on specific items.</p>
+                    <a href="#contact" class="cta-button secondary">Schedule Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="service-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modal-content">
+                    <!-- Modal content will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>5 Salman Drive<br>Laundryville, Freetown</p>
+                <p>Phone: 077342953</p>
+                <p>Email: info@sparklewash.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 7pm</p>
+                <p>Saturday: 9am - 5pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SparkleWash| James Kabba Conteh.</p>
+            <p><a href="https://youtu.be/your-video-link" target="_blank">View Project Video</a></p>
+        </div>
+    </footer>
+
+    <script src="js/services.js" type="module"></script>
+</body>
+</html>

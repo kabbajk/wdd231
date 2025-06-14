@@ -1,0 +1,85 @@
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+
+    /* Header */
+    #menu-toggle {
+        display: none;
+    }
+
+    #main-nav {
+        position: static;
+        width: auto;
+        transform: none;
+        opacity: 1;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    #main-nav ul {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    #main-nav li {
+        margin-bottom: 0;
+    }
+
+    /* Hero */
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Features */
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Steps */
+    .steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Pricing Calculator */
+    .calculator-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Location Finder */
+    .finder-container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    /* Locations Grid */
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Locations Grid */
+    .locations-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
