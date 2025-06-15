@@ -43,3 +43,26 @@
         justify-content: space-around;
     }
 }
+
+@media (min-width: 641px) {
+    .discover {
+        display: grid;
+        grid-template-areas:
+            "sidebar main main";
+        gap: 2rem;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .attractions-grid {
+        grid-area: main;
+        grid-template-areas:
+            "attraction1 attraction2"
+            "attraction3 attraction4"
+            "attraction5 attraction6"
+            "attraction7 attraction8";
+        grid-template-columns: 1fr 1fr;
+    }
+}

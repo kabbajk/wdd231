@@ -1,65 +1,52 @@
 {
-  "cityInfo": {
-      "population": "125,000",
-      "founded": "1872",
-      "elevation": "1,200"
-  },
-  "attractions": [
+    "attractions": [
       {
-          "id": 1,
-          "name": "Historic Downtown Square",
-          "address": "100 Main Street, Your City, ST 12345",
-          "description": "The heart of our city featuring boutique shops, restaurants, and monthly community events.",
-          "image": "images/downtown.webp"
+        "name": "Riverside Park",
+        "address": "123 Park Ave, Your City",
+        "description": "Beautiful 50-acre park with walking trails, picnic areas, and a scenic river view.",
+        "image": "images/sunnyhang.webp"
       },
       {
-          "id": 2,
-          "name": "Riverside Park",
-          "address": "500 River Road, Your City, ST 12345",
-          "description": "A beautiful 50-acre park with walking trails, picnic areas, and a scenic river view.",
-          "image": "images/riverside-park.webp"
+        "name": "City Museum",
+        "address": "456 History Lane, Your City",
+        "description": "Explore our city's rich history through interactive exhibits and artifacts.",
+        "image": "images/larger.webp"
       },
       {
-          "id": 3,
-          "name": "City Museum",
-          "address": "200 Heritage Lane, Your City, ST 12345",
-          "description": "Explore our city's rich history through interactive exhibits and artifacts.",
-          "image": "images/museum.webp"
+        "name": "Downtown Plaza",
+        "address": "Main Street, Your City",
+        "description": "The heart of our city with shops, restaurants, and frequent community events.",
+        "image": "images/small.webp"
       },
       {
-          "id": 4,
-          "name": "Mountain View Golf Club",
-          "address": "300 Fairway Drive, Your City, ST 12345",
-          "description": "An 18-hole championship golf course with stunning mountain vistas.",
-          "image": "images/golf-course.webp"
+        "name": "Lakeview Golf Course",
+        "address": "789 Fairway Dr, Your City",
+        "description": "18-hole championship course with stunning lake views and excellent facilities.",
+        "image": "images/airballon.webp"
       },
       {
-          "id": 5,
-          "name": "Farmers Market",
-          "address": "150 Market Street, Your City, ST 12345",
-          "description": "Fresh local produce, artisan goods, and live music every Saturday morning.",
-          "image": "images/farmers-market.webp"
+        "name": "Performing Arts Center",
+        "address": "101 Culture Blvd, Your City",
+        "description": "State-of-the-art venue hosting concerts, plays, and cultural events year-round.",
+        "image": "images/sunnyhang.webp"
       },
       {
-          "id": 6,
-          "name": "Performing Arts Center",
-          "address": "400 Cultural Avenue, Your City, ST 12345",
-          "description": "Hosting Broadway shows, concerts, and local theater productions year-round.",
-          "image": "images/arts-center.webp"
+        "name": "Historic District",
+        "address": "Old Town, Your City",
+        "description": "Preserved 19th century architecture with boutique shops and guided tours available.",
+        "image": "images/small.webp"
       },
       {
-          "id": 7,
-          "name": "Science Discovery Center",
-          "address": "250 Innovation Way, Your City, ST 12345",
-          "description": "Interactive science exhibits perfect for families and school groups.",
-          "image": "images/science-center.webp"
+        "name": "Science Discovery Center",
+        "address": "234 Innovation Way, Your City",
+        "description": "Interactive science museum perfect for families with hands-on exhibits.",
+        "image": "images/airballon.webp"
       },
       {
-          "id": 8,
-          "name": "Lakeview Trail",
-          "address": "Trailhead at 600 Lakeside Drive, Your City, ST 12345",
-          "description": "A 5-mile paved trail around the lake with breathtaking views and wildlife.",
-          "image": "images/lake-trail.webp"
+        "name": "Mountain View Trail",
+        "address": "Trailhead at Canyon Rd, Your City",
+        "description": "Scenic hiking trail with panoramic views of the surrounding mountains.",
+        "image": "images/sunnyhang.webp"
       }
-  ]
-}
+    ]
+  }

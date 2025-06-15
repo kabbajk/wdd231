@@ -17,3 +17,13 @@
         background-color: #e0a800;
     }
 }
+
+@media (min-width: 1025px) {
+    .attractions-grid {
+        grid-template-areas:
+            "attraction1 attraction2 attraction3"
+            "attraction4 attraction5 attraction6"
+            "attraction7 attraction8 .";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

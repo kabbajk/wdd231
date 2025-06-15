@@ -1,100 +1,94 @@
 <!DOCTYPE html>
-<html lang="en-Us">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chamber of Commerce directory for Africa">
-  <meta name="author" content="James kabba conteh">
-  
-  <!-- Social Media Meta Tags -->
-  <meta property="og:title" content="Africa Chamber of Commerce">
-  <meta property="og:description" content="The African Chamber of Commerce fosters trade, investment, and business growth across Africa. Join our network to access opportunities, resources, and partnerships for economic development.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://github.com/kabbajk/wdd231/blob/main/images/kabbajk.jpg">
-  <meta property="og:url" content="https://kabbajk.github.io/wdd231/chamber/directory.html">
-  
-  <title>Africa Chamber of Commerce Directory</title>
-  <link rel="icon" href="images/icon.png">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/directory.js" defer></script>
-  <script src="scripts/weather.js" defer></script>
-  <script src="scripts/members.js" defer></script>
-  <script src="scripts/main.js" defer></script>
-  <script src="scripts/discover.js" defer></script>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Our City | Your City Chamber of Commerce</title>
+    <meta name="description" content="Discover the best attractions in our city that make it a great place to live, work, and visit.">
+    <meta name="author" content="James Kabba Conteh">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <header>
-  <div class="header-content">
-    <div class="logo">
-      <img src="images/handshake.png" alt="Freetown Chamber of Commerce Logo">
-    </div>
-    <button class="hamburger" aria-label="Menu" aria-expanded="false">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <nav class="nav-menu">
-      <ul id="primary-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="discover-main">
-  <aside class="sidebar">
-      <div class="visitor-info">
-          <h2>Visitor Information</h2>
-          <p id="visit-message">Welcome! Let us know if you have any questions.</p>
-          <p>Population: <span id="population"></span></p>
-          <p>Founded: <span id="founded"></span></p>
-          <p>Elevation: <span id="elevation"></span> ft</p>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="images/handshake.png" alt="Freetown Chamber of Commerce Logo">
+        </div>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="nav-menu">
+          <ul id="primary-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </nav>
       </div>
-  </aside>
+    </header>
 
-  <section class="discover-gallery">
-      <h2>Local Attractions</h2>
-      <div class="cards-container" id="attractions-container">
-          <!-- Cards will be dynamically inserted here -->
+    <main class="discover">
+        <h2>Discover Our City</h2>
+        <div class="sidebar">
+            <div class="demographics">
+                <h3>City Demographics</h3>
+                <p>Population: 120,000</p>
+                <p>Median Age: 34</p>
+                <p>Median Household Income: $65,000</p>
+                <p>Average Commute Time: 22 minutes</p>
+            </div>
+            <div class="visit-message">
+                <h3>Welcome Back!</h3>
+                <p id="visitMessage"></p>
+            </div>
+        </div>
+        
+        <div class="attractions-grid" id="attractionsContainer">
+            <!-- Attractions will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <p>Africa Chamber of Commerce</p>
+        <p>5 Beach Road</p>
+        <p>Calabar, Nigeria</p>
+        <p>☎ (+234) 77342953</p>
+        <p>✉ info@africachamber.org</p>
       </div>
-  </section>
-</main>
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/fb.png" alt="Facebook Icon" width="32">
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <img src="images/twitter.png" alt="Twitter Icon" width="32">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="images/instragram.png" alt="Instagram Icon" width="32">
+          </a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.png" alt="LinkedIn Icon" width="32">
+          </a>
+        </div>
+      <div class="legal">
+        <p>&copy; <span id="copyright-year"></span> Africa Chamber</p>
+        <p>James kabba conteh</p>
+        <p>WDD 231 Project</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+    </footer>
 
-
-<footer>
-  <div class="contact">
-    <p>Africa Chamber of Commerce</p>
-    <p>5 Beach Road</p>
-    <p>Calabar, Nigeria</p>
-    <p>☎ (+234) 77342953</p>
-    <p>✉ info@africachamber.org</p>
-  </div>
-    <!-- Social Media Links -->
-    <div class="social-links">
-      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-        <img src="images/fb.png" alt="Facebook Icon" width="32">
-      </a>
-      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-        <img src="images/twitter.png" alt="Twitter Icon" width="32">
-      </a>
-      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-        <img src="images/instragram.png" alt="Instagram Icon" width="32">
-      </a>
-      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-        <img src="images/linkedin.png" alt="LinkedIn Icon" width="32">
-      </a>
-    </div>
-  <div class="legal">
-    <p>&copy; <span id="copyright-year"></span> Africa Chamber</p>
-    <p>James kabba conteh</p>
-    <p>WDD 231 Project</p>
-    <p>Last Modified: <span id="last-modified"></span></p>
-  </div>
-</footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/discover.js"></script>
 </body>
 </html>
